@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\bw\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.1.51\e34fe80c9714240525f665113dd3749415515655\kotlin-stdlib-1.1.51.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e34fe80c9714240525f665113dd3749415515655">
+        <dex dex="D:\Asprojects\MyApplication\GridDemo\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.1.51_a0858186eaec953f251ccf3248d3ce387e019d33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bw\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jre7\1.1.51\8b5933578dc55f32cfc1a25f1db6371e4161fb8f\kotlin-stdlib-jre7-1.1.51.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8b5933578dc55f32cfc1a25f1db6371e4161fb8f">
+        <dex dex="D:\Asprojects\MyApplication\GridDemo\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-jre7-1.1.51_07d2baa9e950db5d0603196fbbba98bd3f8170c7.jar" />
+    </item>
+
+</items>
