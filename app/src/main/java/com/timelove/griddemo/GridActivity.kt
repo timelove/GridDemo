@@ -69,9 +69,9 @@ class GridActivity : BaseActivity() {
         toast("显示布局:" + str)
     }
 
-
     /**
      * 设置Fragment组件 跨多少行 跨多少列
+     * 这里不一样的要设置成 Fragment,其他各种组件都可以自己搭配
      *
      * @param grid grid控件
      * @param t    fragment布局

@@ -25,25 +25,6 @@ class EasyFragment : Fragment() {
         }
     }
 
-//    class EasyFragment private constructor(Str :String) {
-//
-//        companion object{
-//            var instance : EasyFragment?=null
-//
-//            fun getInstance(c:String) :EasyFragment{
-//                if (instance == null) {
-//                    synchronized(EasyFragment::class) {
-//                        if (instance == null) {
-//                            instance = EasyFragment(c)
-//                        }
-//                    }
-//                }
-//
-//                return instance!!
-//            }
-//        }
-//    }
-
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         super.onCreateView(inflater, container, savedInstanceState)
         if (null === contentView) {

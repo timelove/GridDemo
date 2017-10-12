@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="方案二:三布局模式,上 2 下 1"
+            android:text="方案二:三布局模式,上 1 下 2"
             android:textSize="24sp"
             />
     </LinearLayout>
