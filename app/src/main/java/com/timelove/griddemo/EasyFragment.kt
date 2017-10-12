@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment.*
 
 /**
  * author： bw
@@ -13,7 +14,7 @@ import android.view.ViewGroup
  */
 class EasyFragment : Fragment() {
 
-    private var contentView: View = null!!//初始化,这里变量不再是空安全的
+    private var contentView: View? = null//初始化,这里变量不再是空安全的
     private var mStr: String? = null
 
     object Single {
@@ -45,13 +46,11 @@ class EasyFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        if (null == contentView) {
-            contentView = inflater!!.inflate(R.layout.fragment, container, false)
+        if (null === contentView) {
+            contentView = inflater?.inflate(R.layout.fragment, container, false)
         } else {
-            return contentView
-
         }
-        return contentView
+        return contentView as View
     }
 
     /**
@@ -59,6 +58,8 @@ class EasyFragment : Fragment() {
      */
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        tv_test.setText(mStr)
 
     }
 
