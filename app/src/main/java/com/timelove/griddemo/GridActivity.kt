@@ -26,13 +26,13 @@ class GridActivity : BaseActivity() {
         setContentView(R.layout.activity_grid)
 
         listone = ArrayList()
-        listone?.add(Data.Single.getInstance(0, 0, 3, 2))
-        listone?.add(Data.Single.getInstance(0, 2, 3, 2))
+        listone?.add(Data(0, 0, 3, 2))
+        listone?.add(Data(0, 2, 3, 2))
 
         listtwo = ArrayList()
-        listtwo?.add(Data.Single.getInstance(0, 0, 3, 2))
-        listtwo?.add(Data.Single.getInstance(0, 2, 1, 2))
-        listtwo?.add(Data.Single.getInstance(1, 2, 2, 2))
+        listtwo?.add(Data(0, 0, 3, 2))
+        listtwo?.add(Data(0, 2, 1, 2))
+        listtwo?.add(Data(1, 2, 2, 2))
 
         //获取手机屏幕高宽度
         val wm: WindowManager = this.windowManager
@@ -89,6 +89,7 @@ class GridActivity : BaseActivity() {
         par.height = height / mainY * yn
         par.width = width / mainX * xn
 
+
         //判断子布局的上下左右是否为边界,是,就不留间隔.
         if (0 != y) {
             par.topMargin = 1
@@ -112,27 +113,7 @@ class GridActivity : BaseActivity() {
     /**
      * 数据Model
      */
-    class Data {
-
-        var x: Int? = null
-        var y: Int? = null
-        var xn: Int? = null
-        var yn: Int? = null
-
-        /**
-         * 单例模式 该模式在kotlin 有很多种表达方法
-         */
-        object Single {
-            fun getInstance(x: Int, y: Int, xn: Int, yn: Int): Data {
-                val data: Data = Data()
-                data.x = x
-                data.y = y
-                data.xn = xn
-                data.yn = yn
-                return data
-
-            }
-        }
+    data class Data(val x: Int, val y: Int, val xn: Int, val yn: Int) {
 
     }
 

@@ -6,15 +6,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity(), View.OnClickListener {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         tv_one.setOnClickListener(this@MainActivity)
         tv_two.setOnClickListener(this@MainActivity)
-
-
     }
 
     override fun onClick(view: View) {
@@ -30,12 +27,4 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             }
         }
     }
-
-    class data {
-        var x: Int? = null
-        var y: Int? = null
-        var xn: Int? = null
-        var yn: Int? = null
-    }
-
 }
