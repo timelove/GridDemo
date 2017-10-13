@@ -41,7 +41,6 @@ class EasyFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         tv_test.setText(mStr)
-
     }
 
     override fun onDestroyView() {

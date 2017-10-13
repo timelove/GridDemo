@@ -107,14 +107,10 @@ class GridActivity : BaseActivity() {
         t.layoutParams = par
 
         grid.addView(t, par)
-
     }
 
     /**
      * 数据Model
      */
-    data class Data(val x: Int, val y: Int, val xn: Int, val yn: Int) {
-
-    }
-
+    data class Data(val x: Int, val y: Int, val xn: Int, val yn: Int)
 }
